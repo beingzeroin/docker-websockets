@@ -1,0 +1,28 @@
+http://socket.io
+
+
+WebSockets is a browswer based technology (Two Way Communication)
+    Engine.io is a layer built on top of WebSockets
+        socket.io is a layer built on top of Engine.io
+
+
+Single TCP Connection - Persistent
+
+https://caniuse.com/#search=websockets
+
+
+Socket.io is event-based bi-directional communication technology.
+
+USED IN
+    - Chats
+    - Analytics
+    - Notification
+    - IMG/AUDIO/VIDEO as binary stream can be sent.
+    - Google Docs
+    - Shared Whiteboards
+    - Realtime Dasboards
+    - MultiPlayer Games
+    - Trading Applications
+    
+
+

@@ -1,0 +1,37 @@
+{
+  "name": "chat.io",
+  "version": "1.0.0",
+  "description": "A Real Time Chat Application built using Node.js, Express, Mongoose, Socket.io, Passport, & Redis.",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "url": "git+https://github.com/OmarElGabry/chat.io.git",
+    "type": "git"
+  },
+  "author": "Omar El Gabry <omar.elgabry.93@gmail.com> (http://omarelgabry.me)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/OmarElGabry/chat.io/issues"
+  },
+  "homepage": "https://github.com/OmarElGabry/chat.io",
+  "dependencies": {
+    "bcrypt-nodejs": "0.0.3",
+    "body-parser": "^1.19.0",
+    "connect-flash": "^0.1.1",
+    "connect-mongo": "^3.0.0",
+    "ejs": "^2.7.1",
+    "express": "^4.17.1",
+    "express-session": "^1.17.0",
+    "mongoose": "^5.7.6",
+    "passport": "^0.4.0",
+    "passport-facebook": "^3.0.0",
+    "passport-local": "^1.0.0",
+    "passport-twitter": "^1.0.4",
+    "redis": "^2.8.0",
+    "socket.io": "^2.3.0",
+    "socket.io-redis": "^5.2.0",
+    "winston": "^3.2.1"
+  }
+}

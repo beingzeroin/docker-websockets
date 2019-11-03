@@ -1,0 +1,27 @@
+{
+	"db": {
+		"username": "",
+		"password": "",
+		"host": "mongo",
+		"port": "27017",
+		"name": "fancyChatDb"
+	},
+	"sessionSecret": "<RandomString>",
+	"facebook": {
+		"clientID": "<AppID>",
+		"clientSecret": "<AppSecret>",
+		"callbackURL": "/auth/facebook/callback",
+		"profileFields": ["id", "displayName", "photos"]
+	},
+	"twitter": {
+		"consumerKey": "<ConsumerKey>",
+		"consumerSecret": "<ConsumerSecret>",
+		"callbackURL": "/auth/twitter/callback",
+		"profileFields": ["id", "displayName", "photos"]
+	},
+	"redis": {
+		"host": "redis",
+		"port": 6379,
+		"password": ""
+	}
+}

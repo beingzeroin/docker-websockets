@@ -1,0 +1,84 @@
+version: "3"
+services:
+  websockets-server:
+    container_name: websockets-server
+    build: websockets-server
+    environment:
+      WEB_PORT: 3000
+    ports:
+      - "3000:3000"
+    networks:
+    - beingzero  
+
+  quotes-server:
+    container_name: quotes-server
+    build: quotes-server
+    environment:
+      WEB_PORT: 3000
+    ports:
+      - "3001:3000"
+    networks:
+    - beingzero  
+
+  websockets-chat:
+    container_name: websockets-chat
+    build: websockets-chat
+    environment:
+      WEB_PORT: 3000
+    ports:
+      - "3002:3000"
+    networks:
+    - beingzero  
+
+  websockets-whiteboard:
+    container_name: websockets-whiteboard
+    build: websockets-whiteboard
+    environment:
+      WEB_PORT: 3000
+    ports:
+      - "3003:3000"
+    networks:
+    - beingzero  
+
+  websockets-videochat:
+    container_name: websockets-videochat
+    build: websockets-videochat
+    environment:
+      WEB_PORT: 3000
+      MONGO_URL:  'mongodb://mongo:27017/videoChatDB'
+    ports:
+      - "3004:3000"
+    networks:
+    - beingzero
+
+  fancy-chat:
+    container_name: fancy-chat
+    build: fancy-chat
+    environment:
+      WEB_PORT: 3000
+      MONGO_URL:  'mongodb://mongo:27017/fancyChatDB'
+    ports:
+      - "3005:3000"
+    networks:
+    - beingzero  
+
+  mongo:
+    image: mongo
+    restart: always
+    ports:
+    - "27018:27017"
+    networks:
+    - beingzero  
+
+  redis:
+    #container_name: beingzero-redis
+    image: redis
+    ports:
+    - "6379:6379"
+    volumes:
+    - ./redis-server/config/redis.conf:/usr/local/etc/redis/redis.conf
+    networks:
+    - beingzero
+
+networks:
+  beingzero:
